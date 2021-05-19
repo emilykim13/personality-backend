@@ -4,5 +4,4 @@ class Api::V1::PersonalitiesController < ApplicationController
         personalities = Personality.all
         render json: personalities
     end
-
 end

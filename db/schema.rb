@@ -10,30 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_041600) do
+ActiveRecord::Schema.define(version: 2021_05_19_002104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "personalities", force: :cascade do |t|
     t.string "name"
-    t.boolean "injt_architect", default: false
-    t.boolean "intp_logician", default: false
-    t.boolean "entj_commander", default: false
-    t.boolean "entp_debater", default: false
-    t.boolean "infj_advocate", default: false
-    t.boolean "infp_mediator", default: false
-    t.boolean "enfj_protagonist", default: false
-    t.boolean "enfp_campaigner", default: false
-    t.boolean "istj_logistician", default: false
-    t.boolean "isfj_defender", default: false
-    t.boolean "estj_executive", default: false
-    t.boolean "esfj_consul", default: false
-    t.boolean "istp_virtuoso", default: false
-    t.boolean "isfp_adventurer", default: false
-    t.boolean "estp_entrepreneur", default: false
-    t.boolean "esfp_entertainer", default: false
+    t.string "letters"
+    t.string "summary"
+    t.string "image"
+    t.string "introduction"
+    t.string "intropp"
+    t.string "image_two"
+    t.string "firstpp"
+    t.string "secondpp"
+    t.string "thirdpp"
+    t.string "fourthpp"
+    t.string "fifthpp"
+    t.string "firstheader"
+    t.string "secondheader"
+    t.string "thirdheader"
+    t.string "fourthheader"
+    t.string "fifthheader"
     t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "personality_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

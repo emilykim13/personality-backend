@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :personalities
       resources :users
+      resources :profiles
       post '/login', to: "auth#login"
     end
   end
