@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 2021_05_19_002104) do
     t.string "thirdheader"
     t.string "fourthheader"
     t.string "fifthheader"
-    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -41,6 +40,9 @@ ActiveRecord::Schema.define(version: 2021_05_19_002104) do
   create_table "profiles", force: :cascade do |t|
     t.integer "user_id"
     t.integer "personality_id"
+    t.string "name"
+    t.string "personality_letters"
+    t.string "personality_character"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

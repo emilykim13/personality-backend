@@ -21,9 +21,6 @@ class CreatePersonalities < ActiveRecord::Migration[6.1]
 
       # t.string :strengths
       # t.string :weaknesses
-
-      
-      t.integer "user_id"
       
       t.timestamps
     end

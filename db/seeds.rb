@@ -337,5 +337,5 @@ Personality.create(
 
 
 
-Profile.create(user_id: User.second.id, personality_id: Personality.second.id)
-Profile.create(user_id: User.third.id, personality_id: Personality.third.id)
+Profile.create(user_id: User.second.id, personality_id: Personality.second.id, name: "Adri", personality_letters: Personality.second.letters, personality_character: Personality.second.name)
+Profile.create(user_id: User.third.id, personality_id: Personality.third.id, name: "Devante", personality_letters: Personality.third.letters, personality_character: Personality.third.name)
