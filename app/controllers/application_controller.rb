@@ -36,23 +36,4 @@ class ApplicationController < ActionController::API
         render json: {message: "Please log in"}, status: :unauthorized unless logged_in?
     end
 
-
-    # def logged_in?
-    #     # byebug
-    #     hders = request.headers["Authorization"]
-    #     token = hders.split(" ")[1]
-    #     user_id = JWT.decode(token, "LordStrings")[0]["user_id"]
-    #     user = User.find(user_id)
-    #     if user
-    #         user
-    #     else
-    #         user = nil
-    #     end
-    #     render json:{error: "Please log in"} unless user
-    # end
-
-    # def encode_token(payload)
-    #     enToken = JWT.encode(payload, "LordStrings")
-    # end
-
 end
