@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :users
       resources :profiles
       post '/login', to: "auth#login"
+      post "/signup", to: "users#create"
     end
   end
 

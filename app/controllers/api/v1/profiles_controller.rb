@@ -1,9 +1,9 @@
 class Api::V1::ProfilesController < ApplicationController
-    before_action :logged_in?, only: :index
+    # skip_before_action :logged_in?, only: :index
 
     def index 
-        allprofiles = Profile.all
-        myprofile = Profile.all.select{|p| p.user_id == user.id}
+        # allprofiles = Profile.all
+        # myprofile = Profile.all.select{|p| p.user_id == user.id}
         # byebug
         # render json: myprofile
     end
