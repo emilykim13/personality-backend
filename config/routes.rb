@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :profiles
       post '/login', to: "auth#login"
       post "/signup", to: "users#create"
+      get '/loadlogin', to: "users#show"
     end
   end
 
