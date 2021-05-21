@@ -1,5 +1,5 @@
 class Api::V1::ProfilesController < ApplicationController
-    # skip_before_action :logged_in?, only: :index
+    skip_before_action :authorized
 
     def index 
         # allprofiles = Profile.all
