@@ -2,7 +2,8 @@ class ApplicationController < ActionController::API
     before_action :authorized
 
     def encode_token(payload)
-        JWT.encode(payload, "LordStrings")
+        # byebug
+        JWT.encode(payload, ENV['SECRET'])
     end
 
     def auth_header
@@ -13,7 +14,7 @@ class ApplicationController < ActionController::API
         if auth_header
             token = auth_header.split(' ')[1]
             begin
-                JWT.decode(token, "LordStrings", true, algorithm: 'HS256')
+                JWT.decode(token, ENV['SECRET'], true, algorithm: 'HS256')
 
             rescue JWT::DecodeError
                 nil
@@ -41,7 +42,7 @@ class ApplicationController < ActionController::API
     #     # byebug
     #     hders = request.headers["Authorization"]
     #     token = hders.split(" ")[1]
-    #     user_id = JWT.decode(token, "LordStrings")[0]["user_id"]
+    #     user_id = JWT.decode(token, ENV['SECRET'])[0]["user_id"]
     #     user = User.find(user_id)
     #     if user
     #         user
@@ -52,7 +53,7 @@ class ApplicationController < ActionController::API
     # end
 
     # def encode_token(payload)
-    #     enToken = JWT.encode(payload, "LordStrings")
+    #     enToken = JWT.encode(payload, ENV['SECRET'])
     # end
 
 end
