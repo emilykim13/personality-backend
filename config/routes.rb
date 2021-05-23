@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       resources :personalities
       resources :users
       resources :profiles
+      resources :responses
+      resources :tests
       post '/login', to: "auth#login"
       post "/signup", to: "users#create"
       get '/loadlogin', to: "users#show"
