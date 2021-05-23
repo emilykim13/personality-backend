@@ -1,4 +1,5 @@
 class Test < ApplicationRecord
-    has_many :responses
     belongs_to :user
+    has_many :responses
+    has_many :questions, through: :responses
 end
