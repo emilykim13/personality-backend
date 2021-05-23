@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+Response.destroy_all
+Test.destroy_all
+Profile.destroy_all
 Personality.destroy_all
 User.destroy_all
 
@@ -32,7 +36,8 @@ Personality.create(
     secondheader: "Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.", 
     thirdheader: "Social Frustrations", 
     fourthheader: nil, 
-    fifthheader: "The Chess Game of Life"
+    fifthheader: "The Chess Game of Life",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05PH3YqrtAEBPE5QxtjyvLCzD21BtSrMz3b1quphdntNKSZqSo4g3XCxBY95hr_m1ZLY&usqp=CAU"
 )
 # 2
 Personality.create(
@@ -52,7 +57,8 @@ Personality.create(
     secondheader: "Imaginative and curious, Logician personalities can find endless fascination in the workings of their own mind.", 
     thirdheader: "Elementary, My Dear Logician", 
     fourthheader: "For Logicians, the best conversations are like brainstorming sessions, with plenty of room for unconventional thoughts and off-the-wall what-ifs.", 
-    fifthheader: "Mysteries of the Universe"
+    fifthheader: "Mysteries of the Universe",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLDDCUziSBO3W1RBnueruRJC1vfCsW-TeEhEXH31VsKW2mJu5yElYWEIkP88Hfdc2Ztis&usqp=CAU"
 )
 # 3
 Personality.create(
@@ -72,7 +78,8 @@ Personality.create(
     secondheader: 'Negotiations', 
     thirdheader: 'The underlying thought running through the Commander mind might be something like "I don’t care if you call me an insensitive b*****d, as long as I remain an efficient b*****d".', 
     fourthheader: "Cultivating the Science of Human Relationships", 
-    fifthheader: "More about Relationships"
+    fifthheader: "More about Relationships",
+    image_three: "https://i.pinimg.com/originals/b4/d9/31/b4d931b7657d17f00b61e16f6da0be56.png"
 )
 # 4
 Personality.create(
@@ -92,7 +99,8 @@ Personality.create(
     secondheader: "There Are no Rules Here – We’re Trying to Accomplish Something!", 
     thirdheader: "Debate and debate more", 
     fourthheader: nil, 
-    fifthheader: "Opportunity Is Missed Because It Looks Like Hard Work"
+    fifthheader: "Opportunity Is Missed Because It Looks Like Hard Work",
+    image_three: "https://e7.pngegg.com/pngimages/503/493/png-clipart-personality-type-entp-infj-enfp-personality-entp.png"
 )
 # 5
 Personality.create(
@@ -112,7 +120,8 @@ Personality.create(
     secondheader: "Purpose in life", 
     thirdheader: "Connecting with Others (and Themselves)", 
     fourthheader: "The Cost of Success", 
-    fifthheader: "A Personal Mission"
+    fifthheader: "A Personal Mission",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvrgP5ohk0iGA9ItnIoJqq682xI3k6ry8Fow&usqp=CAU"
 )
 # 6
 Personality.create(
@@ -132,7 +141,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Speaking Their Truth", 
     fourthheader: "In Search of a Calling", 
-    fifthheader: "Creativity and Idealism"
+    fifthheader: "Creativity and Idealism",
+    image_three: "https://i.pinimg.com/originals/50/8c/5b/508c5b61c93227b0d71cc1dd41544197.png"
 )
 # 7
 Personality.create(
@@ -152,7 +162,8 @@ Personality.create(
     secondheader: "Geunine beliefs", 
     thirdheader: "Reflections", 
     fourthheader: "..The Struggle Ought Not to Deter Us From the Support of a Cause We Believe to Be Just", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://i.pinimg.com/originals/aa/e1/01/aae101ace7f8951b74664a98419b19db.png"
 )
 # 8
 Personality.create(
@@ -172,7 +183,8 @@ Personality.create(
     secondheader: "Campaigners are fiercely independent, and much more than stability and security, they crave creativity and freedom.", 
     thirdheader: "Don’t Lose That ’Little Spark of Madness’", 
     fourthheader: nil, 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyqKMHtrKcGp2uQ09yzbjREoTX5doWD6Aq3uEu6no8Md10LkuHJXyJ_8fIKtu9be-XvI&usqp=CAU"
 )
 # 9
 Personality.create(
@@ -192,7 +204,8 @@ Personality.create(
     secondheader: "Associate With Those of Good Quality if You Esteem Your Reputation...", 
     thirdheader: nil, 
     fourthheader: nil, 
-    fifthheader: "...For It Is Better to Be Alone Than in Bad Company"
+    fifthheader: "...For It Is Better to Be Alone Than in Bad Company",
+    image_three: "https://blog.kakaocdn.net/dn/bhHwgd/btqE7O8xByL/JePyKx9GeHAjP2NP6mLqq1/img.png"
 )
 # 10
 Personality.create(
@@ -212,7 +225,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "We Must Be Seen to Be Believed", 
     fourthheader: nil, 
-    fifthheader: "If I Can Protect You, I Will"
+    fifthheader: "If I Can Protect You, I Will",
+    image_three: "https://i.pinimg.com/originals/37/34/2e/37342ef95ab1709ebf1416136eccd033.png"
 )
 # 11
 Personality.create(
@@ -232,7 +246,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: nil, 
     fourthheader: "...But Still Better Are Those Who Acknowledge When They Are in Error", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://e7.pngegg.com/pngimages/186/189/png-clipart-estj-personality-type-human-behavior-product-estj-personality.png"
 )
 # 12
 Personality.create(
@@ -252,7 +267,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Play Dates Aren’t Just for the Kids!", 
     fourthheader: nil, 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VKmdQtyPteCv95bKG37dE2-POJNH7urrc0xKXxVz3_TdRKB_xbOZc6kjC0sInG30kVA&usqp=CAU"
 )
 # 13
 Personality.create(
@@ -272,7 +288,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Dare to Differ", 
     fourthheader: nil, 
-    fifthheader: "Nothing Is as Boring as Everyone Agreeing With You"
+    fifthheader: "Nothing Is as Boring as Everyone Agreeing With You",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJEqXcxYc59qTWmr7xFNzTIaY-KvlNH2XcgBNaoBqfpAutr8TG8vTgNbWm75dKBGJZS1A&usqp=CAU"
 )
 # 14
 Personality.create(
@@ -292,7 +309,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Adventurers always know just the compliment to soften a heart that’s getting ready to call their risks irresponsible or reckless.", 
     fourthheader: "Meaning Is in Every Expression of Life", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://i0.wp.com/www.16personalities.com/images/types/scenes/explorers_Adventurer_ISFP_introduction.png"
 )
 # 15
 Personality.create(
@@ -312,7 +330,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Most People Don’t Listen Well Enough", 
     fourthheader: "Sometimes Entrepreneurs’ instantaneous observation and action is just what’s required, as in some corporate environments, and especially in emergencies.", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnb6mCvOUp_b755lNkVwK5pNR78VqXE-5K6-kjgrWOylIx3cYt-vNl_tKGqbEBWFXITfw&usqp=CAU"
 )
 # 16
 Personality.create(
@@ -332,10 +351,111 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "...And We Deserve to Twinkle", 
     fourthheader: nil, 
-    fifthheader: "There’s nothing that makes Entertainers feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends."
+    fifthheader: "There’s nothing that makes Entertainers feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends.",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-y2mkcG7IlOTVFwV6ylSZWwdqpScIMEHQhzcMkFMdpZkvaWOM3A5ua0VQumRZfnwSVDY&usqp=CAU"
 )
 
 
 
 Profile.create(user_id: User.second.id, personality_id: Personality.second.id, name: "Adri", personality_letters: Personality.second.letters, personality_character: Personality.second.name)
 Profile.create(user_id: User.third.id, personality_id: Personality.third.id, name: "Devante", personality_letters: Personality.third.letters, personality_character: Personality.third.name)
+
+Test.create(user_id: User.second.id, results: "INTP", ive: 20, svn: 61, tvf: 31, pvj: 29)
+
+# q1-10
+Question.create(question_string: "You regularly make new friends.")
+Question.create(question_string: "You spend a lot of your free time exploring various random topics that pique your interest.")
+Question.create(question_string: "Seeing other people cry can easily make you feel like you want to cry too.")
+Question.create(question_string: "You often make a backup plan for a backup plan.")
+Question.create(question_string: "You usually stay calm, even under a lot of pressure. ")
+Question.create(question_string: "At social events, you rarely try to introduce yourself to new people and mostly talk to the ones you already know.")
+Question.create(question_string: "You prefer to completely finish one project before starting another.")
+Question.create(question_string: "You are very sentimental.")
+Question.create(question_string: "You like to use organizing tools like schedules and lists.")
+Question.create(question_string: "Even a small mistake can cause you to doubt your overall abilities and knowledge.")
+# q11-q20
+Question.create(question_string: "You feel comfortable just walking up to someone you find interesting and striking up a conversation.")
+Question.create(question_string: "You are not too interested in discussing various interpretations and analyses of creative works.")
+Question.create(question_string: "You are more inclined to follow your head than your heart.")
+Question.create(question_string: "You usually prefer just doing what you feel like at any given moment instead of planning a particular daily routine.")
+Question.create(question_string: "You rarely worry about whether you make a good impression on people you meet.")
+Question.create(question_string: "You enjoy participating in group activities.")
+Question.create(question_string: "You like books and movies that make you come up with your own interpretation of the ending.")
+Question.create(question_string: "Your happiness comes more from helping others accomplish things than your own accomplishments.")
+Question.create(question_string: "You are interested in so many things that you find it difficult to choose what to try next.")
+Question.create(question_string: "You are prone to worrying that things will take a turn for the worse.")
+#q21-30
+Question.create(question_string: "You avoid leadership roles in group settings.")
+Question.create(question_string: "You are definitely not an artistic type of person.")
+Question.create(question_string: "You think the world would be a better place if people relied more on rationality and less on their feelings.")
+Question.create(question_string: "You prefer to do your chores before allowing yourself to relax.")
+Question.create(question_string: "You enjoy watching people argue.")
+Question.create(question_string: "You tend to avoid drawing attention to yourself.")
+Question.create(question_string: "Your mood can change very quickly.")
+Question.create(question_string: "You lose patience with people who are not as efficient as you.")
+Question.create(question_string: "You often end up doing things at the last possible moment.")
+Question.create(question_string: "You have always been fascinated by the question of what, if anything, happens after death.")
+# q31-40
+Question.create(question_string: "You usually prefer to be around others rather than on your own.")
+Question.create(question_string: "You become bored or lose interest when the discussion gets highly theoretical.")
+Question.create(question_string: "You find it easy to empathize with a person whose experiences are very different from yours.")
+Question.create(question_string: "You usually postpone finalizing decisions for as long as possible.")
+Question.create(question_string: "You rarely second-guess the choices that you have made.")
+Question.create(question_string: "After a long and exhausting week, a lively social event is just what you need.")
+Question.create(question_string: "You enjoy going to art museums.")
+Question.create(question_string: "You often have a hard time understanding other people’s feelings.")
+Question.create(question_string: "You like to have a to-do list for each day.")
+Question.create(question_string: "You rarely feel insecure.")
+# q41-50
+Question.create(question_string: "You avoid making phone calls.")
+Question.create(question_string: "You often spend a lot of time trying to understand views that are very different from your own.")
+Question.create(question_string: "In your social circle, you are often the one who contacts your friends and initiates activities.")
+Question.create(question_string: "If your plans are interrupted, your top priority is to get back on track as soon as possible.")
+Question.create(question_string: "You are still bothered by mistakes that you made a long time ago.")
+Question.create(question_string: "You rarely contemplate the reasons for human existence or the meaning of life.")
+Question.create(question_string: "Your emotions control you more than you control them.")
+Question.create(question_string: "You take great care not to make people look bad, even when it is completely their fault.")
+Question.create(question_string: "Your personal work style is closer to spontaneous bursts of energy than organized and consistent efforts.")
+Question.create(question_string: "When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.")
+# q51-60
+Question.create(question_string: "You would love a job that requires you to work alone most of the time.")
+Question.create(question_string: "You believe that pondering abstract philosophical questions is a waste of time.")
+Question.create(question_string: "You feel more drawn to places with busy, bustling atmospheres than quiet, intimate places.")
+Question.create(question_string: "You know at first glance how someone is feeling.")
+Question.create(question_string: "You often feel overwhelmed.")
+Question.create(question_string: "You complete things methodically without skipping over any steps.")
+Question.create(question_string: "You are very intrigued by things labeled as controversial.")
+Question.create(question_string: "You would pass along a good opportunity if you thought someone else needed it more.")
+Question.create(question_string: "You struggle with deadlines.")
+Question.create(question_string: "You feel confident that things will work out for you.")
+
+
+
+Response.create(test_id: Test.first.id, question_id: Question.first.id, response_value: 0, trait: "ive")
+
+
+# create_table "questions", force: :cascade do |t|
+#     t.string "question_string"
+#     t.datetime "created_at", precision: 6, null: false
+#     t.datetime "updated_at", precision: 6, null: false
+#   end
+
+#   create_table "responses", force: :cascade do |t|
+#     t.integer "test_id"
+#     t.integer "question_id"
+#     t.integer "response_value"
+#     t.string "trait"
+#     t.datetime "created_at", precision: 6, null: false
+#     t.datetime "updated_at", precision: 6, null: false
+#   end
+
+#   create_table "tests", force: :cascade do |t|
+#     t.integer "user_id"
+#     t.string "results"
+#     t.integer "ive", default: 45
+#     t.integer "svn", default: 45
+#     t.integer "tvf", default: 45
+#     t.integer "pvj", default: 45
+#     t.datetime "created_at", precision: 6, null: false
+#     t.datetime "updated_at", precision: 6, null: false
+#   end
