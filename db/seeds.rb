@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Profile.destroy_all
 Personality.destroy_all
 User.destroy_all
 
@@ -32,7 +33,8 @@ Personality.create(
     secondheader: "Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.", 
     thirdheader: "Social Frustrations", 
     fourthheader: nil, 
-    fifthheader: "The Chess Game of Life"
+    fifthheader: "The Chess Game of Life",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05PH3YqrtAEBPE5QxtjyvLCzD21BtSrMz3b1quphdntNKSZqSo4g3XCxBY95hr_m1ZLY&usqp=CAU"
 )
 # 2
 Personality.create(
@@ -52,7 +54,8 @@ Personality.create(
     secondheader: "Imaginative and curious, Logician personalities can find endless fascination in the workings of their own mind.", 
     thirdheader: "Elementary, My Dear Logician", 
     fourthheader: "For Logicians, the best conversations are like brainstorming sessions, with plenty of room for unconventional thoughts and off-the-wall what-ifs.", 
-    fifthheader: "Mysteries of the Universe"
+    fifthheader: "Mysteries of the Universe",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLDDCUziSBO3W1RBnueruRJC1vfCsW-TeEhEXH31VsKW2mJu5yElYWEIkP88Hfdc2Ztis&usqp=CAU"
 )
 # 3
 Personality.create(
@@ -72,7 +75,8 @@ Personality.create(
     secondheader: 'Negotiations', 
     thirdheader: 'The underlying thought running through the Commander mind might be something like "I don’t care if you call me an insensitive b*****d, as long as I remain an efficient b*****d".', 
     fourthheader: "Cultivating the Science of Human Relationships", 
-    fifthheader: "More about Relationships"
+    fifthheader: "More about Relationships",
+    image_three: "https://i.pinimg.com/originals/b4/d9/31/b4d931b7657d17f00b61e16f6da0be56.png"
 )
 # 4
 Personality.create(
@@ -92,7 +96,8 @@ Personality.create(
     secondheader: "There Are no Rules Here – We’re Trying to Accomplish Something!", 
     thirdheader: "Debate and debate more", 
     fourthheader: nil, 
-    fifthheader: "Opportunity Is Missed Because It Looks Like Hard Work"
+    fifthheader: "Opportunity Is Missed Because It Looks Like Hard Work",
+    image_three: "https://e7.pngegg.com/pngimages/503/493/png-clipart-personality-type-entp-infj-enfp-personality-entp.png"
 )
 # 5
 Personality.create(
@@ -112,7 +117,8 @@ Personality.create(
     secondheader: "Purpose in life", 
     thirdheader: "Connecting with Others (and Themselves)", 
     fourthheader: "The Cost of Success", 
-    fifthheader: "A Personal Mission"
+    fifthheader: "A Personal Mission",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvrgP5ohk0iGA9ItnIoJqq682xI3k6ry8Fow&usqp=CAU"
 )
 # 6
 Personality.create(
@@ -132,7 +138,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Speaking Their Truth", 
     fourthheader: "In Search of a Calling", 
-    fifthheader: "Creativity and Idealism"
+    fifthheader: "Creativity and Idealism",
+    image_three: "https://i.pinimg.com/originals/50/8c/5b/508c5b61c93227b0d71cc1dd41544197.png"
 )
 # 7
 Personality.create(
@@ -152,7 +159,8 @@ Personality.create(
     secondheader: "Geunine beliefs", 
     thirdheader: "Reflections", 
     fourthheader: "..The Struggle Ought Not to Deter Us From the Support of a Cause We Believe to Be Just", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://i.pinimg.com/originals/aa/e1/01/aae101ace7f8951b74664a98419b19db.png"
 )
 # 8
 Personality.create(
@@ -172,7 +180,8 @@ Personality.create(
     secondheader: "Campaigners are fiercely independent, and much more than stability and security, they crave creativity and freedom.", 
     thirdheader: "Don’t Lose That ’Little Spark of Madness’", 
     fourthheader: nil, 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyqKMHtrKcGp2uQ09yzbjREoTX5doWD6Aq3uEu6no8Md10LkuHJXyJ_8fIKtu9be-XvI&usqp=CAU"
 )
 # 9
 Personality.create(
@@ -192,7 +201,8 @@ Personality.create(
     secondheader: "Associate With Those of Good Quality if You Esteem Your Reputation...", 
     thirdheader: nil, 
     fourthheader: nil, 
-    fifthheader: "...For It Is Better to Be Alone Than in Bad Company"
+    fifthheader: "...For It Is Better to Be Alone Than in Bad Company",
+    image_three: "https://blog.kakaocdn.net/dn/bhHwgd/btqE7O8xByL/JePyKx9GeHAjP2NP6mLqq1/img.png"
 )
 # 10
 Personality.create(
@@ -212,7 +222,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "We Must Be Seen to Be Believed", 
     fourthheader: nil, 
-    fifthheader: "If I Can Protect You, I Will"
+    fifthheader: "If I Can Protect You, I Will",
+    image_three: "https://i.pinimg.com/originals/37/34/2e/37342ef95ab1709ebf1416136eccd033.png"
 )
 # 11
 Personality.create(
@@ -232,7 +243,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: nil, 
     fourthheader: "...But Still Better Are Those Who Acknowledge When They Are in Error", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://e7.pngegg.com/pngimages/186/189/png-clipart-estj-personality-type-human-behavior-product-estj-personality.png"
 )
 # 12
 Personality.create(
@@ -252,7 +264,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Play Dates Aren’t Just for the Kids!", 
     fourthheader: nil, 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VKmdQtyPteCv95bKG37dE2-POJNH7urrc0xKXxVz3_TdRKB_xbOZc6kjC0sInG30kVA&usqp=CAU"
 )
 # 13
 Personality.create(
@@ -272,7 +285,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Dare to Differ", 
     fourthheader: nil, 
-    fifthheader: "Nothing Is as Boring as Everyone Agreeing With You"
+    fifthheader: "Nothing Is as Boring as Everyone Agreeing With You",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJEqXcxYc59qTWmr7xFNzTIaY-KvlNH2XcgBNaoBqfpAutr8TG8vTgNbWm75dKBGJZS1A&usqp=CAU"
 )
 # 14
 Personality.create(
@@ -292,7 +306,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Adventurers always know just the compliment to soften a heart that’s getting ready to call their risks irresponsible or reckless.", 
     fourthheader: "Meaning Is in Every Expression of Life", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://i0.wp.com/www.16personalities.com/images/types/scenes/explorers_Adventurer_ISFP_introduction.png"
 )
 # 15
 Personality.create(
@@ -312,7 +327,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "Most People Don’t Listen Well Enough", 
     fourthheader: "Sometimes Entrepreneurs’ instantaneous observation and action is just what’s required, as in some corporate environments, and especially in emergencies.", 
-    fifthheader: nil
+    fifthheader: nil,
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnb6mCvOUp_b755lNkVwK5pNR78VqXE-5K6-kjgrWOylIx3cYt-vNl_tKGqbEBWFXITfw&usqp=CAU"
 )
 # 16
 Personality.create(
@@ -332,7 +348,8 @@ Personality.create(
     secondheader: nil, 
     thirdheader: "...And We Deserve to Twinkle", 
     fourthheader: nil, 
-    fifthheader: "There’s nothing that makes Entertainers feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends."
+    fifthheader: "There’s nothing that makes Entertainers feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends.",
+    image_three: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-y2mkcG7IlOTVFwV6ylSZWwdqpScIMEHQhzcMkFMdpZkvaWOM3A5ua0VQumRZfnwSVDY&usqp=CAU"
 )
 
 

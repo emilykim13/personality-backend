@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_05_19_002104) do
     t.string "thirdheader"
     t.string "fourthheader"
     t.string "fifthheader"
+    t.string "image_three"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
