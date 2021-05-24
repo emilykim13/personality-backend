@@ -1,10 +1,10 @@
 class Api::V1::UsersController < ApplicationController
     skip_before_action :authorized, only: [:create, :update]
-    before_action :logged_in?, only: [:show]
+    before_action :logged_in?, only: [:show, :destroy]
 
     def show
         profiles = current_user.profiles
-        render json: {user: current_user, profiles: profiles}, status: :accepted
+        render json: {user: current_user, email: current_user.email, profiles: profiles}, status: :accepted
     end
 
     def create
@@ -25,8 +25,8 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def destroy
-        user = User.find(params[:id])
-        user.destroy
+        # byebug
+        current_user.destroy
     end
 
 
