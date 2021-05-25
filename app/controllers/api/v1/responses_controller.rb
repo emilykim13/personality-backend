@@ -50,9 +50,16 @@ class Api::V1::ResponsesController < ApplicationController
         end
         
         p_type = "#{my_ie}" + "#{my_sn}" + "#{my_tf}" + "#{my_pj}"
-        byebug
+        # byebug
+        # ENFJ === ENFJ
+        results_personality = Personality.all.select{|p| p.letters === p_type}
+
+        test = Test.create(user_id: current_user.id, results: p_type, ive: my_ie, svn: my_sn, tvf: my_tf, pvj: my_pj)
+
+        render json: {test: test, p_results: results_personality}, status: :created
 # holy shit it works
         # byebug
+
     end
 
     def numberizer(rv)
