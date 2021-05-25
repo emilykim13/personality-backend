@@ -12,7 +12,7 @@ Test.destroy_all
 Profile.destroy_all
 Personality.destroy_all
 User.destroy_all
-
+Question.destroy_all
 
 User.create(name: "Emily", email: "emily@joemama.com", password: "dope")
 User.create(name: "Adri", email: "adri@joemama.com", password: "cats")
@@ -362,100 +362,75 @@ Profile.create(user_id: User.third.id, personality_id: Personality.third.id, nam
 
 Test.create(user_id: User.second.id, results: "INTP", ive: 20, svn: 61, tvf: 31, pvj: 29)
 
-# q1-10
-Question.create(question_string: "You regularly make new friends.")
-Question.create(question_string: "You spend a lot of your free time exploring various random topics that pique your interest.")
-Question.create(question_string: "Seeing other people cry can easily make you feel like you want to cry too.")
-Question.create(question_string: "You often make a backup plan for a backup plan.")
-Question.create(question_string: "You usually stay calm, even under a lot of pressure. ")
-Question.create(question_string: "At social events, you rarely try to introduce yourself to new people and mostly talk to the ones you already know.")
-Question.create(question_string: "You prefer to completely finish one project before starting another.")
-Question.create(question_string: "You are very sentimental.")
-Question.create(question_string: "You like to use organizing tools like schedules and lists.")
-Question.create(question_string: "Even a small mistake can cause you to doubt your overall abilities and knowledge.")
+# q1-10 ie sn tf pj
+Question.create(question_string: "You regularly make new friends.", trait: "ie", posneg: 1)
+Question.create(question_string: "You spend a lot of your free time exploring various random topics that pique your interest.", trait: "pj", posneg: 1)
+Question.create(question_string: "Seeing other people cry can easily make you feel like you want to cry too.", trait: "tf", posneg: 1)
+Question.create(question_string: "You often make a backup plan for a backup plan.", trait: "sn", posneg: 1)
+Question.create(question_string: "You usually stay calm, even under a lot of pressure.", trait: "tf", posneg: -1)
+Question.create(question_string: "At social events, you rarely try to introduce yourself to new people and mostly talk to the ones you already know.", trait: "ie", posneg: -1)
+Question.create(question_string: "You prefer to completely finish one project before starting another.", trait: "sn", posneg: 1)
+Question.create(question_string: "You are very sentimental.", trait: "tf", posneg: 1)
+Question.create(question_string: "You like to use organizing tools like schedules and lists.", trait: "sn", posneg: 1)
+Question.create(question_string: "Even a small mistake can cause you to doubt your overall abilities and knowledge.", trait: "pj", posneg: 1)
 # q11-q20
-Question.create(question_string: "You feel comfortable just walking up to someone you find interesting and striking up a conversation.")
-Question.create(question_string: "You are not too interested in discussing various interpretations and analyses of creative works.")
-Question.create(question_string: "You are more inclined to follow your head than your heart.")
-Question.create(question_string: "You usually prefer just doing what you feel like at any given moment instead of planning a particular daily routine.")
-Question.create(question_string: "You rarely worry about whether you make a good impression on people you meet.")
-Question.create(question_string: "You enjoy participating in group activities.")
-Question.create(question_string: "You like books and movies that make you come up with your own interpretation of the ending.")
-Question.create(question_string: "Your happiness comes more from helping others accomplish things than your own accomplishments.")
-Question.create(question_string: "You are interested in so many things that you find it difficult to choose what to try next.")
-Question.create(question_string: "You are prone to worrying that things will take a turn for the worse.")
+Question.create(question_string: "You feel comfortable just walking up to someone you find interesting and striking up a conversation.", trait: "ie", posneg: 1)
+Question.create(question_string: "You are not too interested in discussing various interpretations and analyses of creative works.", trait: "pj", posneg: 1)
+Question.create(question_string: "You are more inclined to follow your head than your heart.", trait: "tf", posneg: 1)
+Question.create(question_string: "You usually prefer just doing what you feel like at any given moment instead of planning a particular daily routine.", trait: "sn", posneg: -1)
+Question.create(question_string: "You rarely worry about whether you make a good impression on people you meet.", trait: "ie", posneg: 1)
+Question.create(question_string: "You enjoy participating in group activities.", trait: "ie", posneg: 1)
+Question.create(question_string: "You like books and movies that make you come up with your own interpretation of the ending.", trait: "pj", posneg: -1)
+Question.create(question_string: "Your happiness comes more from helping others accomplish things than your own accomplishments.", trait: "tf", posneg: 1)
+Question.create(question_string: "You are interested in so many things that you find it difficult to choose what to try next.", trait: "sn", posneg: -1)
+Question.create(question_string: "You are prone to worrying that things will take a turn for the worse.", trait: "sn", posneg: 1)
 #q21-30
-Question.create(question_string: "You avoid leadership roles in group settings.")
-Question.create(question_string: "You are definitely not an artistic type of person.")
-Question.create(question_string: "You think the world would be a better place if people relied more on rationality and less on their feelings.")
-Question.create(question_string: "You prefer to do your chores before allowing yourself to relax.")
-Question.create(question_string: "You enjoy watching people argue.")
-Question.create(question_string: "You tend to avoid drawing attention to yourself.")
-Question.create(question_string: "Your mood can change very quickly.")
-Question.create(question_string: "You lose patience with people who are not as efficient as you.")
-Question.create(question_string: "You often end up doing things at the last possible moment.")
-Question.create(question_string: "You have always been fascinated by the question of what, if anything, happens after death.")
+Question.create(question_string: "You avoid leadership roles in group settings.", trait: "ie", posneg: -1)
+Question.create(question_string: "You are definitely not an artistic type of person.", trait: "pj", posneg: 1)
+Question.create(question_string: "You think the world would be a better place if people relied more on rationality and less on their feelings.", trait: "tf", posneg: -1)
+Question.create(question_string: "You prefer to do your chores before allowing yourself to relax.", trait: "sn", posneg: 1)
+Question.create(question_string: "You enjoy watching people argue.", trait: "pj", posneg: -1)
+Question.create(question_string: "You tend to avoid drawing attention to yourself.", trait: "ie", posneg: -1)
+Question.create(question_string: "Your mood can change very quickly.", trait: "tf", posneg: 1)
+Question.create(question_string: "You lose patience with people who are not as efficient as you.", trait: "tf", posneg: 1)
+Question.create(question_string: "You often end up doing things at the last possible moment.", trait: "sn", posneg: -1)
+Question.create(question_string: "You have always been fascinated by the question of what, if anything, happens after death.", trait: "pj", posneg: -1)
 # q31-40
-Question.create(question_string: "You usually prefer to be around others rather than on your own.")
-Question.create(question_string: "You become bored or lose interest when the discussion gets highly theoretical.")
-Question.create(question_string: "You find it easy to empathize with a person whose experiences are very different from yours.")
-Question.create(question_string: "You usually postpone finalizing decisions for as long as possible.")
-Question.create(question_string: "You rarely second-guess the choices that you have made.")
-Question.create(question_string: "After a long and exhausting week, a lively social event is just what you need.")
-Question.create(question_string: "You enjoy going to art museums.")
-Question.create(question_string: "You often have a hard time understanding other people’s feelings.")
-Question.create(question_string: "You like to have a to-do list for each day.")
-Question.create(question_string: "You rarely feel insecure.")
+Question.create(question_string: "You usually prefer to be around others rather than on your own.", trait: "ie", posneg: 1)
+Question.create(question_string: "You become bored or lose interest when the discussion gets highly theoretical.", trait: "pj", posneg: -1)
+Question.create(question_string: "You find it easy to empathize with a person whose experiences are very different from yours.", trait: "tf", posneg: 1)
+Question.create(question_string: "You usually postpone finalizing decisions for as long as possible.", trait: "sn", posneg: -1)
+Question.create(question_string: "You rarely second-guess the choices that you have made.", trait: "pj", posneg: 1)
+Question.create(question_string: "After a long and exhausting week, a lively social event is just what you need.", trait: "ie", posneg: 1)
+Question.create(question_string: "You enjoy going to art museums.", trait: "pj", posneg: -1)
+Question.create(question_string: "You often have a hard time understanding other people’s feelings.", trait: "tf", posneg: -1)
+Question.create(question_string: "You like to have a to-do list for each day.", trait: "sn", posneg: 1)
+Question.create(question_string: "You rarely feel insecure.", trait: "pj", posneg: 1)
 # q41-50
-Question.create(question_string: "You avoid making phone calls.")
-Question.create(question_string: "You often spend a lot of time trying to understand views that are very different from your own.")
-Question.create(question_string: "In your social circle, you are often the one who contacts your friends and initiates activities.")
-Question.create(question_string: "If your plans are interrupted, your top priority is to get back on track as soon as possible.")
-Question.create(question_string: "You are still bothered by mistakes that you made a long time ago.")
-Question.create(question_string: "You rarely contemplate the reasons for human existence or the meaning of life.")
-Question.create(question_string: "Your emotions control you more than you control them.")
-Question.create(question_string: "You take great care not to make people look bad, even when it is completely their fault.")
-Question.create(question_string: "Your personal work style is closer to spontaneous bursts of energy than organized and consistent efforts.")
-Question.create(question_string: "When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.")
+Question.create(question_string: "You avoid making phone calls.", trait: "ie", posneg: -1)
+Question.create(question_string: "You often spend a lot of time trying to understand views that are very different from your own.", trait: "tf", posneg: 1)
+Question.create(question_string: "In your social circle, you are often the one who contacts your friends and initiates activities.", trait: "ie", posneg: 1)
+Question.create(question_string: "If your plans are interrupted, your top priority is to get back on track as soon as possible.", trait: "sn", posneg: 1)
+Question.create(question_string: "You are still bothered by mistakes that you made a long time ago.", trait: "pj", posneg: 1)
+Question.create(question_string: "You rarely contemplate the reasons for human existence or the meaning of life.", trait: "pj", posneg: 1)
+Question.create(question_string: "Your emotions control you more than you control them.", trait: "tf", posneg: 1)
+Question.create(question_string: "You take great care not to make people look bad, even when it is completely their fault.", trait: "ie", posneg: 1)
+Question.create(question_string: "Your personal work style is closer to spontaneous bursts of energy than organized and consistent efforts.", trait: "sn", posneg: -1)
+Question.create(question_string: "When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.", trait: "pj", posneg: 1)
 # q51-60
-Question.create(question_string: "You would love a job that requires you to work alone most of the time.")
-Question.create(question_string: "You believe that pondering abstract philosophical questions is a waste of time.")
-Question.create(question_string: "You feel more drawn to places with busy, bustling atmospheres than quiet, intimate places.")
-Question.create(question_string: "You know at first glance how someone is feeling.")
-Question.create(question_string: "You often feel overwhelmed.")
-Question.create(question_string: "You complete things methodically without skipping over any steps.")
-Question.create(question_string: "You are very intrigued by things labeled as controversial.")
-Question.create(question_string: "You would pass along a good opportunity if you thought someone else needed it more.")
-Question.create(question_string: "You struggle with deadlines.")
-Question.create(question_string: "You feel confident that things will work out for you.")
+Question.create(question_string: "You would love a job that requires you to work alone most of the time.", trait: "ie", posneg: 1)
+Question.create(question_string: "You believe that pondering abstract philosophical questions is a waste of time.", trait: "tf", posneg: 1)
+Question.create(question_string: "You feel more drawn to places with busy, bustling atmospheres than quiet, intimate places.", trait: "ie", posneg: 1)
+Question.create(question_string: "You know at first glance how someone is feeling.", trait: "tf", posneg: 1)
+Question.create(question_string: "You often feel overwhelmed.", trait: "ie", posneg: -1)
+Question.create(question_string: "You complete things methodically without skipping over any steps.", trait: "sn", posneg: 1)
+Question.create(question_string: "You are very intrigued by things labeled as controversial.", trait: "pj", posneg: -1)
+Question.create(question_string: "You would pass along a good opportunity if you thought someone else needed it more.", trait: "tf", posneg: 1)
+Question.create(question_string: "You struggle with deadlines.", trait: "sn", posneg: -1)
+Question.create(question_string: "You feel confident that things will work out for you.", trait: "sn", posneg: 1)
 
 
 
-Response.create(test_id: Test.first.id, question_id: Question.first.id, response_value: 0, trait: "ive")
-
-
-# create_table "questions", force: :cascade do |t|
-#     t.string "question_string"
-#     t.datetime "created_at", precision: 6, null: false
-#     t.datetime "updated_at", precision: 6, null: false
-#   end
-
-#   create_table "responses", force: :cascade do |t|
-#     t.integer "test_id"
-#     t.integer "question_id"
-#     t.integer "response_value"
-#     t.string "trait"
-#     t.datetime "created_at", precision: 6, null: false
-#     t.datetime "updated_at", precision: 6, null: false
-#   end
-
-#   create_table "tests", force: :cascade do |t|
-#     t.integer "user_id"
-#     t.string "results"
-#     t.integer "ive", default: 45
-#     t.integer "svn", default: 45
-#     t.integer "tvf", default: 45
-#     t.integer "pvj", default: 45
-#     t.datetime "created_at", precision: 6, null: false
-#     t.datetime "updated_at", precision: 6, null: false
-#   end
+# t.string "question_string"
+# t.string "trait"
+# t.integer "posneg"

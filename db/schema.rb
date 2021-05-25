@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2021_05_23_182805) do
 
   create_table "questions", force: :cascade do |t|
     t.string "question_string"
+    t.string "trait"
+    t.integer "posneg"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -58,7 +60,6 @@ ActiveRecord::Schema.define(version: 2021_05_23_182805) do
     t.integer "test_id"
     t.integer "question_id"
     t.integer "response_value"
-    t.string "trait"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

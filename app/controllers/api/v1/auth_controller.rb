@@ -6,7 +6,9 @@ class Api::V1::AuthController < ApplicationController
             if user && user.authenticate(auth_param[:password])
                 # byebug
                 token = encode_token({user_id: user.id})
-                render json: {username: user.name, 
+                render json: {
+                # username: user.name,
+                user: user, 
                 token: JWT.encode({user_id: user.id}, ENV['SECRET']), 
                 profiles: user.profiles}, 
                 status: :accepted
