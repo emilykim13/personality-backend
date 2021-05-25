@@ -54,7 +54,7 @@ class Api::V1::ResponsesController < ApplicationController
         # ENFJ === ENFJ
         results_personality = Personality.all.select{|p| p.letters === p_type}
 
-        test = Test.create(user_id: current_user.id, results: p_type, ive: my_ie, svn: my_sn, tvf: my_tf, pvj: my_pj)
+        test = Test.create(user_id: current_user.id, results: p_type, ive: ie1, svn: sn1, tvf: tf1, pvj: pj1)
 
         render json: {test: test, p_results: results_personality}, status: :created
 # holy shit it works
@@ -62,6 +62,9 @@ class Api::V1::ResponsesController < ApplicationController
 
     end
 
+    
+    
+    private
     def numberizer(rv)
         if (rv === "strongly-disagree")
             res_value = (-3)
@@ -80,9 +83,6 @@ class Api::V1::ResponsesController < ApplicationController
         end
         res_value
     end
-
-
-    private
 
     def res_params
         params.require(:response).permit(:test_id, :question_id, :resps)
