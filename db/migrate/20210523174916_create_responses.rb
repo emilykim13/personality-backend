@@ -4,7 +4,6 @@ class CreateResponses < ActiveRecord::Migration[6.1]
       t.integer :test_id
       t.integer :question_id
       t.integer :response_value
-      t.string :trait
 
       t.timestamps
     end

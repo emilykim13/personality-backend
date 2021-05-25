@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       post "/signup", to: "users#create"
       get '/loadlogin', to: "users#show"
       delete "/destroy", to: "users#destroy"
+      post '/resdata', to: "responses#resdata"
     end
   end
 
