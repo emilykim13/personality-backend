@@ -40,10 +40,11 @@ ActiveRecord::Schema.define(version: 2021_05_23_182805) do
 
   create_table "profiles", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "personality_id"
-    t.string "name"
-    t.string "personality_letters"
-    t.string "personality_character"
+    t.string "username"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "photo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -66,11 +67,12 @@ ActiveRecord::Schema.define(version: 2021_05_23_182805) do
 
   create_table "tests", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "personality_id"
     t.string "results"
-    t.integer "ive", default: 45
-    t.integer "svn", default: 45
-    t.integer "tvf", default: 45
-    t.integer "pvj", default: 45
+    t.integer "ive"
+    t.integer "svn"
+    t.integer "tvf"
+    t.integer "pvj"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

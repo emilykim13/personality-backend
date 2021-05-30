@@ -20,8 +20,9 @@ class Api::V1::UsersController < ApplicationController
     def update
         user =  User.find(params[:id])
         profiles = current_user.profiles
+        tests = current_user.tests
         user.update(user_params)
-        render json: {user: current_user, profiles: profiles}, status: :accepted
+        render json: {user: current_user, profiles: profiles, tests: tests}, status: :accepted
     end
 
     def destroy

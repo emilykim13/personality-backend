@@ -20,9 +20,6 @@ class CreatePersonalities < ActiveRecord::Migration[6.1]
       t.string :fifthheader
       t.string :image_three
 
-      # t.string :strengths
-      # t.string :weaknesses
-      
       t.timestamps
     end
   end

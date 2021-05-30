@@ -356,12 +356,6 @@ Personality.create(
 )
 
 
-
-Profile.create(user_id: User.second.id, personality_id: Personality.second.id, name: "Adri", personality_letters: Personality.second.letters, personality_character: Personality.second.name)
-Profile.create(user_id: User.third.id, personality_id: Personality.third.id, name: "Devante", personality_letters: Personality.third.letters, personality_character: Personality.third.name)
-
-Test.create(user_id: User.second.id, results: "INTP", ive: 20, svn: 61, tvf: 31, pvj: 29)
-
 # q1-10 ie sn tf pj
 Question.create(question_string: "You regularly make new friends.", trait: "ie", posneg: 1)
 Question.create(question_string: "You spend a lot of your free time exploring various random topics that pique your interest.", trait: "pj", posneg: 1)
@@ -429,8 +423,4 @@ Question.create(question_string: "You would pass along a good opportunity if you
 Question.create(question_string: "You struggle with deadlines.", trait: "sn", posneg: -1)
 Question.create(question_string: "You feel confident that things will work out for you.", trait: "sn", posneg: 1)
 
-
-
-# t.string "question_string"
-# t.string "trait"
-# t.integer "posneg"
+Test.create(user_id: User.second.id, personality_id: Personality.second.id, results: "INTP", ive: 20, svn: 61, tvf: 31, pvj: 29)
