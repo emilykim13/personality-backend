@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get '/loadlogin', to: "users#show"
       delete "/destroy", to: "users#destroy"
       post '/resdata', to: "responses#resdata"
+      post '/createprofile', to: "profiles#create"
     end
   end
 

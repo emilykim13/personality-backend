@@ -1,4 +1,5 @@
 class Personality < ApplicationRecord
-    has_many :profiles
-    has_many :users, through: :profiles
+    has_many :tests
+    has_many :users, through: :tests
+
 end

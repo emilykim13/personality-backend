@@ -7,7 +7,9 @@ class Api::V1::TestsController < ApplicationController
 
     def create
         test = Test.create(test_params)
-        render json: {test: test}, status: :created
+        profiles = current_user.profiles
+        tests = current_user.tests
+        render json: {user: current_user, profiles: profiles, tests: tests}, status: :created
     end
 
     private
