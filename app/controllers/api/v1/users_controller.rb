@@ -4,7 +4,7 @@ class Api::V1::UsersController < ApplicationController
 
     def show
         profiles = current_user.profiles
-        render json: {user: current_user, email: current_user.email, profiles: profiles}, status: :accepted
+        render json: {user: current_user, profiles: profiles, tests: current_user.tests}, status: :accepted
     end
 
     def create

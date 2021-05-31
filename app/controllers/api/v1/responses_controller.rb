@@ -55,8 +55,10 @@ class Api::V1::ResponsesController < ApplicationController
         results_personality = Personality.all.select{|p| p.letters === p_type}[0]
 
         test = Test.create(user_id: current_user.id, personality_id: results_personality.id, results: p_type, ive: ie1, svn: sn1, tvf: tf1, pvj: pj1)
-
-        render json: {test: test}, status: :created
+        
+        profiles = current_user.profiles
+        tests = current_user.tests
+        render json: {user: current_user, profiles: profiles, tests: tests}, status: :created
 # holy shit it works
         # byebug
 
